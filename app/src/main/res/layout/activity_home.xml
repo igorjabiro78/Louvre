@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/louvabu"
+        android:alpha="0.6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        >
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/Museum"
+    android:layout_width="400sp"
+    android:layout_height="200dp"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/louvremuseum"
+    app:lottie_speed="1.5"
+    android:layout_gravity="center"
+
+    />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_welcome"
+        android:layout_width="400sp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/welcomeplants"
+        app:lottie_speed="1.2"
+        android:layout_gravity="center"
+
+        />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

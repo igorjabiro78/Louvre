@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/louvabu"
+        android:alpha="0.6"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        >
+
+    <ImageView
+        android:id="@+id/pictured"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:src="@drawable/louvre"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Art Title"
+            android:id="@+id/arttitle"
+            android:gravity="center"
+            android:textColor="@color/Navy"
+            android:textAlignment="center"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_height="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="5sp">
+        </TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/descr"
+            android:layout_width="325dip"
+            android:hint="You can Change the language preference and enable read screen in settings "
+            android:background="@drawable/box_bg"
+            android:gravity="left"
+            android:textColor="@color/bluefonce"
+            android:textColorHint="@color/bluefonce"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="true"
+            android:editable="false"
+            android:padding="10dip"
+            android:layout_height="200dip">
+        </EditText>
+        <ImageView
+            android:id="@+id/vol"
+            android:layout_width="35dip"
+            android:layout_height="30dip"
+            android:background="@drawable/vol"
+            android:visibility="invisible"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="top"
+        android:layout_marginTop="15sp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Camera"
+            android:id="@+id/camera_btn"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="match_parent"
+            android:text="Home"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:text="Settings"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+          android:onClick="Settings"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+    </LinearLayout>
+
+     </RelativeLayout>
